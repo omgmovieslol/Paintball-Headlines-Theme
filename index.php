@@ -1,0 +1,114 @@
+<?php get_header(); ?>
+
+<div id="main-col">
+
+	<!-- <p id="intro-paragraph">
+		introes...
+	</p> -->
+	<?php $posttestindex = 1; ?>
+
+	<?php if (have_posts()) : ?>
+
+		<?php while (have_posts()) : the_post(); ?>
+
+			<div class="post" id="post-<?php the_ID(); ?>">
+			
+				<div class="datebox">
+					<p class="day"><?php the_time('d') ?></p>
+					<p class="month"><?php the_time('M') ?></p>
+					<p class="year"><?php the_time('Y') ?></p>
+				</div>
+			
+				<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+				
+				<p>By: <?php the_author_posts_link(); ?>
+				<?php
+				
+				if(get_the_category() != null || get_the_tags() != null):
+				
+				?>
+				| <?php the_category(', '); ?>
+				
+				<?php
+				
+				if(get_the_category() != null && get_the_tags() != null):
+				
+				?>
+				 , <?php the_tags('', ', ', ''); ?>
+				
+				<?php
+				
+				elseif (get_the_tags() != null):
+				
+				?>
+				<?php the_tags('',', ', ''); ?>
+				
+				<?php
+				
+				endif;
+				
+				endif;
+				
+				?>
+				 | <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?>
+				 
+				<?php edit_post_link('Edit', ' | ', ''); ?>
+				</p>
+				
+				<?php the_content('Read the rest of this entry &raquo;'); ?>
+				
+				
+				
+			
+			<?php 
+			 
+			if ($posttestindex == 12) {
+				$posttestindex = 0;
+				?>
+				
+				<script type="text/javascript"><!--
+				google_ad_client = "pub-1633320757911200";
+				google_ad_slot = "4542973089";
+				google_ad_width = 336;
+				google_ad_height = 280;
+				//-->
+				</script>
+				<script type="text/javascript"
+				src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+				</script>
+				
+				<?php
+			}
+			
+			
+			?>
+			
+			</div>
+
+		<?php endwhile; ?>
+
+	<?php else : ?>
+
+		<h2>Not Found</h2>
+		<p>Sorry, but you are looking for something that isn't here.</p>
+		<?php include (TEMPLATEPATH . "/searchform.php"); ?>
+
+	<?php endif; ?>
+	
+	<div class="navigation">
+		<?php previous_posts_link('&laquo; Previous Page') ?>
+		<?php
+		if($paged > '0') {
+			echo " | ";
+		}
+		?>
+		<?php next_posts_link('Next Page &raquo;') ?>
+	</div>
+	
+</div>
+
+<?php include (TEMPLATEPATH . '/socialsidebar.php'); ?>
+
+<?php get_sidebar(); ?>
+
+<?php get_footer(); ?>

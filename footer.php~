@@ -1,0 +1,79 @@
+		
+		<div class="clear"></div>
+		
+		<div id="push"></div>
+		
+	<!--</div>-->
+	
+	<div id="footer">
+		<div id="footer-inside">
+		
+			<div id="footer-1">
+			
+				<h4>Paintball Headlines</h4>
+				
+				<p>By <a href="http://drakeinnovations.com/">Drake Innovations</a>. All About Paintball. <a href="http://nothingoutoftheordinary.com/2008/08/24/paintball-headlines-theme/">Source</a></p>
+		
+				
+			
+			</div>
+			
+			<div id="footer-2">
+			
+				<h4>Syndication</h4>
+		
+				<ul>
+					<li><a href="http://feeds.feedburner.com/PaintballHeadlines">Articles RSS</a></li>
+					
+					<li><a href="http://www.feedburner.com/fb/a/emailverifySubmit?feedId=949779">Subscribe by Email</a></li>
+				</ul>
+				
+			</div>
+			
+			<div id="footer-3">
+			
+				<h4>Navigation</h4>
+				
+				<ul>
+					<li><a href="/">Paintball</a></li>
+					<!--<li><a href="/about/">About</a></li>-->
+					<li><a href="/advertise/">Advertise</a></li>
+					<li><a href="/contact/">Contact</a></li>
+					<!--<li><a href="/writers/">Writers</a></li>-->
+				</ul>
+			
+			</div>
+			
+			<div id="footer-4">
+			
+				<h4>Associated</h4>
+				
+				<ul>
+					<li><a href="http://twitter.com/paintball">@paintball on Twitter</a></li>
+					<li><a href="http://www.facebook.com/group.php?gid=20001814180">Paintball on Facebook</a></li>
+					<li><a href="http://www.pbbucket.com">Paintball Classifieds</a></li>
+					<?php if(is_home()) {
+					echo '<li><a href="http://pgipaintball.com">PGI Paintball</a></li>';
+					} ?>
+				</ul>
+			
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+	<?php wp_footer(); ?>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-385757-6");
+pageTracker._trackPageview();
+</script>
+	
+</body>
+
+</html>

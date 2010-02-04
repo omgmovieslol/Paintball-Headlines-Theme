@@ -1,0 +1,263 @@
+/*
+Theme Name: Paintball Headlines New Theme
+Theme URI: http://paintballheadlines.com/
+Description: Modified version of Personal Homepage Theme by <a href="http://chriscoyier.net">Chris Coyier</a> for <a href="http://paintballheadlines.com">Paintball Headlines</a>.
+Version: 1.0
+Author: James Wilson
+Author URI: http://nothingoutoftheordinary.com
+
+
+
+		 Paintball Headlines New Theme
+		 Modified PERSONAL HOMEPAGE THEME FOR WORDPRESS
+		 
+		 By: Chris Coyier
+		 http://chriscoyier.net
+		 http://css-tricks.com
+		 
+		 -- Feel free to alter and use this theme for whatever you would like.
+		 -- A link back is always nice but not required.
+		 
+		 Light Tan: #f4dfb8
+		 Dark Tan: #d7b880
+		 Dark Gray: #272727
+		 Dark Red: #990000
+		 
+		 
+		 Modified version by James Wilson
+		 http://nothingoutoftheordinary.com
+		 
+		 For Paintball Headlines
+		 http://paintballheadlines.com
+		 
+		 Released under same license as original
+*/
+
+/*
+	RESET
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    overflow-y: scroll;
+}
+html, body {
+    height: 100%;
+}
+body {
+    font-size: 62.5%;
+    font-family: Arial, sans-serif;
+    color: #272727; 
+    background: url(images/body-bg.png) top center repeat-x white;
+}
+ul {
+    list-style: square inside;
+}
+ol {
+    list-style: decimal inside;
+}
+a {
+    outline: none;
+    text-decoration: none;
+}
+a img {
+    border: none;
+    background: none;
+}
+img {
+    vertical-align: middle;
+}
+table {
+    border-collapse: collapse;
+}
+
+
+
+/*
+	UTILITY
+*/
+.floatLeft { float: left; }
+.floatRight { float: right; }
+.clear{ clear: both; }
+.button {
+    border: 1px solid #272727;
+    background: white;
+    padding: 3px 8px; 
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    color: 272727;
+}
+.button:hover {
+    background: #990000;
+    color: white;
+}
+
+
+/*
+	TYPGROGRAPHY
+*/
+p, li {
+    font-size: 1.2em;
+    line-height: 1.2em;
+    margin: 0 0 10px 0;
+}
+p#intro-paragraph					{ font-family: Georgia, serif; font-size: 2.0em; font-style: italic; line-height: 1.4em; 
+									  margin-top: 5px; }
+p#intro-paragraph span				{ font-size: 2.4em; font-weight: bold; }
+p#intro-paragraph em				{ color: #990000; }
+a									{ color: #990000; }
+a:hover								{ background: #990000; color: white; }
+h1									{ font-size: 3.6em; font-family: Georgia, serif; font-weight: normal; }
+h2									{ font-size: 2.8em; font-family: Georgia, serif; font-weight: normal; }
+h3									{ font-size: 2.6em; font-family: Georgia, serif; font-weight: normal; margin: 0 0 10px 0; }
+h4									{ color: white; font-size: 2.0em; margin-bottom: 15px; }
+.post h4							{ font-size: 1.8em; font-family: Georgia, serif; font-weight: normal; margin: 0 0 10px 0;
+									  color: #900; }
+
+/*
+	FORMS
+*/
+input								{ padding: 3px; }
+
+
+
+/*
+	STRUCTURE
+*/
+#page-wrap							{ width: 960px; margin: 0px auto -250px;
+									  min-height: 100%; height: auto !important; height: 100%;}
+#socialsidebar 						{ width: 190px; float: left; margin-left: 15px; }
+#main-col							{ width: 540px; float: left; }					
+#linksidebar						{ width: 190px; float: right; }
+#push								{ height: 250px; }
+
+
+/*
+	HEADER
+*/
+h1#logo								{ width: 400px; height: 33px; color: #ffffff;/*background: url(images/yourname.png) top left no-repeat; text-indent: -9999px;*/ 
+									  margin: 0 10px 8px 0; float: left; }
+#main-pic							{ float: left; margin-right: 10px; }
+#top-bar							{ padding: 20px 0 0 0; }
+#top-bar p							{ color: #f4dfb8; width: 300px; float: left; }
+form#searchform						{ margin: 0 0 10px 0; float: right; }
+
+/*
+	MENU
+*/
+#menu-bar							{ padding-top: 11px; padding-bottom: 20px;}
+ul#main-nav							{ width: 360px; float: left; margin: 10px 0 0 0; }
+ul#extra-nav {
+    width: 360px;
+    float: right;
+    text-align: right;
+    margin: 10px 0 0 0;
+}
+ul#main-nav	li, ul#extra-nav li {
+    display: inline;
+}
+ul#main-nav li a, ul#extra-nav li a {
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.2em;
+    padding: 3px 8px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+ul#main-nav li a:hover,
+ul#extra-nav li a:hover,
+body#portfolio ul#extra-nav li.portfolio a,
+body#default ul#main-nav li.home a,
+body#about ul#main-nav li.about a,
+body#advertise ul#main-nav li.advertise a,
+body#contact ul#main-nav li.contact a,
+body#resume ul#extra-nav li.resume a {
+    background: white;
+    color: #272727;
+}
+
+
+
+/*
+	WIDGETS
+*/
+.widget	{
+    background: #f4dfb8;
+    width: 190px;
+    border-right: 1px solid #d7b880; 
+    border-bottom: 1px solid #d7b880; 	
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    margin: 0 0 15px 0;
+}
+.widget .inside						{ padding: 10px; }
+.widget ul							{ list-style: square outside; margin-left: 15px; }
+.widget ul li 						{ margin: 0 0 5px 0; }
+.widget ul li a 					{ display: block; padding: 2px; }
+.widget ul li a:hover				{ background: #900; color: white; }
+.thumb								{ width: 62px; }
+.flickr-thumb						{ height: 41px; width: 62px; overflow: hidden; float: left; margin: 0 0 10px 15px; }
+
+
+/*
+	BLOG ENTRIES
+*/
+.post								{ margin: 0 0 45px 0; }
+.datebox							{ width: 40px; float: left; padding: 0 5px 5px 5px; background: #990000; color: white; text-align: center;
+									  margin: 0 10px 0 0; }
+.day								{ font-size: 3.4em; font-weight: bold; margin: 0; font-family: Georgia, serif; }
+.month								{ font-size: 1.8em; font-weight: bold; text-transform: uppercase; margin: 0; }
+.year								{ font-size: 1.6em; font-weight: bold; margin: 0; }
+ol.commentlist						{ list-style: none; }
+.comment-bubble						{ background: #990000; color: white; padding: 10px; -moz-border-radius: 5px; -webkit-border-radius: 5px; }
+ol.commentlist li p					{ font-size: 1.0em; }
+.gravatar							{ margin-top: 3px; padding: 2px; height: 40px; }
+
+/*
+	FOOTER
+*/
+#footer	{
+    height: 250px;
+    background: #272727;
+    border-top: 4px solid #990000;
+    padding-top: 20px;
+}
+#footer-inside {
+    width: 960px;
+    margin: 0 auto;
+}
+#footer p {
+    color: white;
+}
+#footer-1							{ width: 300px; float: left; margin-right: 30px; }
+#footer-2							{ width: 200px; float: left; margin-right: 30px; }
+#footer-3							{ width: 200px; float: left; }
+#footer-4							{ width: 200px; float: left; }
+#footer a							{ color: white; }
+#footer ul							{ color: white; }
+
+.navigation {
+    font-size: 135%;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.post-advertisement {
+    background-color: rgb(255,255,225);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.comment-bubble a {
+    color: #ffffff;
+}
+
+#top-adz {
+    text-align: center;
+    margin-bottom: 10px;
+}

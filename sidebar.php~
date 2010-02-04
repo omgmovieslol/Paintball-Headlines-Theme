@@ -1,0 +1,55 @@
+<div id="linksidebar">
+
+	<!--<div class="widget">
+		<div class="inside">
+			<span style="font-size:125%; font-weight: bold;">Paintball Web Search</span>
+			<form action="http://paintballheadlines.com/web-search" id="cse-search-box">
+			  <div>
+			    <input type="hidden" name="cx" value="partner-pub-1633320757911200:wghn77-4td3" />
+			    <input type="hidden" name="cof" value="FORID:10" />
+			    <input type="hidden" name="ie" value="ISO-8859-1" />
+			    <input type="text" name="q" size="20" /><br />
+			    <input type="submit" name="sa" value="Search" />
+			  </div>
+			</form>
+			<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+		</div>
+	</div>-->
+
+	<div class="widget">
+		<div class="inside" style="font-size: 125%;">
+			<span style="font-size: 110%"><span style="font-weight: bold; font-size: 100%;">Send in your tips</span>:<br />
+			<a href="mailto:&#116;&#105;&#112;&#115;&#64;&#112;&#97;&#105;&#110;&#116;&#98;&#97;&#108;&#108;&#104;&#101;&#97;&#100;&#108;&#105;&#110;&#101;&#115;&#46;&#99;&#111;&#109;">&#116;&#105;&#112;&#115;&#64;&#112;&#97;&#105;&#110;&#116;&#98;&#97;&#108;&#108;&#104;&#101;&#97;&#100;&#108;&#105;&#110;&#101;&#115;&#46;&#99;&#111;&#109;</a> or <a href="aim:goim?screenname=heyheadlines">heyheadlines on AIM</a>
+			</span>
+			<div class="clear"></div>
+		</div>
+	</div>
+	
+	
+	<div class="widget">
+		<div class="inside">
+			<ul>
+				<?php wp_dtree_get_categories(); ?>
+			</ul>
+		</div>
+	</div>
+	<!--
+	<div class="widget flickr">
+		<div class="inside">
+			
+		</div>
+		<div class="clear"></div>
+	</div> -->
+	
+	
+	<div class="widget">
+		<div class="inside">
+			
+			<?php get_classifieds_new(10); ?>
+			
+		</div>
+	</div>
+	
+	
+</div>
+
